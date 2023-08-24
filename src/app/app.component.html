@@ -1,0 +1,29 @@
+<div class="mainDiv">
+
+  <!-- Reactive Forms -->
+
+  <div style="height: 50%;width: 50%;">
+    <form [formGroup]="fg" (submit)="submit1()">
+    <ng-select [items]="doodleblueBranch" bindLabel="city" 
+     bindValue="city" formControlName="branch"></ng-select> 
+     <button type="submit">save</button>
+  </form>
+  </div>
+
+  <!-- Inside Of ng-select module extra events ng drivenForms -->
+
+  <!-- (change)="itemSelect($event)" [clearable]="true" 
+  [multiple]="true" [closeOnSelect]="false" -->
+
+
+  <!-- Driven Form Handling -->
+
+  <!-- <div style="height: 50%;width: 50%;">
+    <form (ngSubmit)="submit()">
+    <ng-select [items]="doodleblueBranch" bindLabel="city" 
+     bindValue="needed" [(ngModel)]="branch" name="branch"></ng-select> 
+     <button type="submit">save</button>
+  </form>
+  </div> -->
+
+</div>
